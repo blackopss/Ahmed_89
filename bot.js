@@ -35,7 +35,7 @@ if (message.content.startsWith("!help")) {
 -**And More Abilities Coming Soon .. **
 -** **And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
 **`)
-     message.author.sendEmbed(embed);
+     message.author.send(embed);
  }
 });
 
