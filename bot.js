@@ -29,3 +29,35 @@ if (message.content.startsWith(prefix + "roles")) {
             message.channel.sendEmbed(embed);
         }
     });
+client.on('message', message => {
+		const prefix = "!";
+
+    if(message.content == prefix + 'server') {
+        var servername = message.guild.name
+        var اونر = message.guild.owner
+        var اعضاء = message.guild.memberCount
+        var ايدي = message.guild.id
+        var بلدالسيرفر = message.guild.region
+        var الرومات = message.guild.channels.size
+        var الرتب = message.guild.roles
+        var عمل = message.guild.createdAt
+        var الروم = message.guild.defaultChannel
+        var afk = message.guild.afkChannel
+        var ownerid = message.guild.ownerID
+        var server = new Discord.RichEmbed()
+        .setThumbnail(message.guild.iconURL)
+        .addField(' **Server Name** ', servername)
+        .addField(' **Server Id** ' , [ايدي])
+        .addField(' **Server Members** ', اعضاء)
+        .addField(' **Server Rooms** ', الرومات)
+        .addField(' **Afk Room** ', afk)
+        .addField(' **Welcome Room** ', الروم)
+        .addField(' **Server Owner** ', اونر)
+        .addField(' **Owner ID** ', ownerid)
+        .addField(' **Server Region** ', بلدالسيرفر)
+        .addField(' **The opening date of the server** ', عمل)
+        .setColor('RANDOM')
+
+        message.channel.sendEmbed(server)
+    }
+});
