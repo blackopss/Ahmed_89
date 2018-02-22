@@ -5,17 +5,13 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-//status of the bot
-client.user.setStatus('Online')
-
-//playing streaming
 client.user.setGame('!help | Enjoy♥')
 
 });
 
 client.on('message', message => {
-    if (message.content === 'm7md') {
-    	message.reply('**M7MD XD IS DA BEST YEAH YEAH YEAH YEAH ♥ **');
+    if (message.content === 'ping') {
+    	message.reply('pong');
   	}
 });
 
