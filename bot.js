@@ -25,9 +25,9 @@ if (message.content.startsWith("!help")) {
 
      const embed = new Discord.RichEmbed()
          .setColor('RANDOM')
-         .setTitle("**Spyro Bot**")
+         .setTitle("****Spyro Bot****")
          .setDescription(`**
--**! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!'' **
+-****! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!''** **
 -**''!id'' To See Your information playing,role ...etc **
 -**''!server'' To Our Server Information**
 -**''!servericon'' To See Our Server Icon => For Fun !!**
