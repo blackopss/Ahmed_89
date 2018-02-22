@@ -275,10 +275,3 @@ var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.d
 message.channel.sendEmbed(cat);
     }
 });
-
-client.on('message', message => {
-     if (message.content === "Hello") {
-message.channel.sendMessage("** @everyone  Welcome To Our New Staff Member ''Commander'' @7modi_xa#2607 :clap: :clap: **" + `  **
-**`);
-    }
-});
