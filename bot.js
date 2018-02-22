@@ -117,3 +117,7 @@ if(!message.channel.guild) return;
       message.author.sendEmbed(EmbedMalek)
     }
 });
+// playing
+client.on('ready', () => {                           
+client.user.setGame('Vape is a good teacher ☻');                                                                                                                                                                                                                                                                                                                                                                                                                             client.user.setGame(`-help | On 20 Servers`,'https://www.twitch.tv/v5bz');
+});          
