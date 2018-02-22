@@ -91,3 +91,29 @@ minutes = minutes > 9 ? minutes : '0' + minutes
 seconds = seconds > 9 ? seconds : '0' + seconds
 return `${days > 0 ? `${days}:` : ''}${(hours || days) > 0 ? `${hours}:` : ''}${minutes}:${seconds}`
 }
+
+client.on('message', message => {
+       const prefix = "!";
+	
+if (message.content.startsWith(prefix + "inviter")) {
+if(!message.channel.guild) return;
+
+        message.channel.createInvite({
+        thing: true,
+        maxUses: 5,
+        maxAge: 86400
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+    const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setDescription(`  في الخاص ${message.guild.name}تم ارسالك رابط سيرفر `)
+   .setFooter("اسم السيرفر","رابط صوره السيرفر")
+      message.channel.sendEmbed(embed).then(message => {message.delete(3000)})
+              const EmbedMalek = new Discord.RichEmbed()
+        .setColor("000000")
+        .setDescription(`هذا الرابط لخمسه مستخدمين فقط لمده اربعه وعشرين ساعه${message.guild.name} رابط سيرفر  `)
+        .setFooter("اسم السيرفر","رابط صوره السيرفر")
+      message.author.sendEmbed(EmbedMalek)
+    }
+});
