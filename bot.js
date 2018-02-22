@@ -66,7 +66,7 @@ if(message.content == prefix + 'server') {
 client.on('message', message => {
 	const prefix = "!";
 	
-if (message.content.startsWith(prefix + "stats")) {
+if(message.content == prefix + 'stats') {
 if (!message.channel.guild) return message.reply('** This command only for servers **');    
 message.channel.send({
 embed: new Discord.RichEmbed()
