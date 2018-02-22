@@ -120,4 +120,28 @@ if(!message.channel.guild) return;
 // playing
 client.on('ready', () => {                           
 client.user.setGame('Vape is a good teacher ☻');                                                                                                                                                                                                                                                                                                                                                                                                                             client.user.setGame(`-help | On 20 Servers`,'https://www.twitch.tv/v5bz');
-});          
+});
+
+client.on('message', message => {
+	const prefix = "!";
+
+if (message.content.startsWith(prefix + "servericon")) {
+if (!message.channel.guild) return message.reply('** This command only for servers **');
+        var mentionned = message.mentions.users.first();
+        var server;
+        if (mentionned) {
+            var server = mentionned;
+        }
+        else {
+            var server = message.author;
+
+        }
+
+      const embed = new Discord.RichEmbed()
+            .setColor("RANDOM")
+            .setImage(`${message.guild.iconURL}`)
+                      .setFooter(message.author.username, message.author.avatarURL)
+                              message.channel.sendEmbed(embed);
+
+};
+})
