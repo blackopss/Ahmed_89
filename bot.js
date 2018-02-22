@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong bot ping => -20ms :muscle: ');
+    	message.reply('pong bot ping => -20ms');
   	}
 });
 
@@ -212,11 +212,3 @@ message.channel.fetchMessages({
 
 });
 
-client.on('message', message = {
-            if (message.content === '!anime') {
-              message.channel.send('Tokyo Ghoul');
-              message.channel.sendFile(.Photo.PNG);
-               
-
-            }
-});
