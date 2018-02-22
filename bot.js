@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('** @everyone  Welcome To Our New Staff Member ''Commander'' @7modi_xa#2607 :clap: :clap: **');
+    	message.reply('pong');
   	}
 });
 
@@ -273,5 +273,12 @@ var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.d
          var cat = new Discord.RichEmbed()
 .setImage(cats[Math.floor(Math.random() * cats.length)])
 message.channel.sendEmbed(cat);
+    }
+});
+
+client.on('message', message => {
+     if (message.content === "Hello") {
+message.channel.sendMessage("** @everyone  Welcome To Our New Staff Member ''Commander'' @7modi_xa#2607 :clap: :clap: **" + `  **
+**`);
     }
 });
