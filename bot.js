@@ -191,3 +191,23 @@ if(!msg.channel.guild) return msg.reply('**:x: Sorry This Command is Only For Se
       msg.channel.send({embed: embed})
   }
 });
+
+client.on('message', message => {
+        const prefix = "!";
+
+if (message.content.startsWith(prefix + 'clear')) {
+if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`You Don't Have [*MANAGE_MESSAGES*] Permission `).catch(console.error);
+  message.delete()
+if(!message.channel.guild) return;
+let args = message.content.split(" ").slice(1);
+
+const messagecount = parseInt(args.join(' '));
+
+message.channel.fetchMessages({
+
+  limit: messagecount
+
+}).then(messages => message.channel.bulkDelete(messages));
+};
+
+}); 
