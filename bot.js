@@ -38,7 +38,8 @@ client.on('message', message => {
 	const prefix = "!";
 
 if (message.content.startsWith(prefix + "roles")) {
-                if (!message.channel.guild) return message.reply('** This command only for servers **');    
+                if (!message.channel.guild) return message.reply('** This command only for servers **');
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply('*** You Dont Have Permission to do that ***');		
                         if(!message.channel.guild) return message.reply('**This Command is Only For Servers**');
             var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
             const embed = new Discord.RichEmbed()
