@@ -17,7 +17,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.user.setGame('!help |Enjoy')
     
-});
+
 
 
 client.on('message', message => {
