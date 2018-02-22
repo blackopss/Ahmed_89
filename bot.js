@@ -212,15 +212,11 @@ message.channel.fetchMessages({
 
 });
 
-var prefix = "!";
-var cats = ["https://imgur.com/a/LVoSN"]
-    client.on('message', message => {
-        var args = message.content.split(" ").slice(1);
-		 const prefix = "!";
-		 
-    if(message.content.startsWith(prefix + 'animal')) {
-         var cat = new Discord.RichEmbed()
-.setImage(cats[Math.floor(Math.random() * cats.length)])
-message.channel.sendEmbed(cat);
-    }
+client.on('message', message = {
+            if (message.content === '!anime') {
+              message.channel.send('Tokyo Ghoul');
+              message.channel.sendFile(.Photo.PNG);
+               
+
+            }
 });
