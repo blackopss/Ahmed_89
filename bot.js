@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong');
+    	message.reply('** @everyone  Welcome To Our New Staff Member ''Commander'' @7modi_xa#2607 :clap: :clap: **');
   	}
 });
 
@@ -18,7 +18,7 @@ client.login(process.env.BOT_TOKEN);
  
 client.on('message', message => {
 if (message.content.startsWith("!help")) {
-     message.reply("✅**that your request**")
+     message.reply("✅**that's your request**")
 
      const embed = new Discord.RichEmbed()
          .setColor('RANDOM')
