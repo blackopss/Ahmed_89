@@ -25,7 +25,6 @@ client.login(process.env.BOT_TOKEN);
 
 
 client.on('message', message => {
-
 if (message.content.startsWith("!help")) {
      message.reply("✅**that your request**")
 
@@ -39,6 +38,7 @@ if (message.content.startsWith("!help")) {
 -**''!servericon'' To See Our Server Icon => For Fun !!**
 -**''!animal'' To See a Animals Pictures => For Fun !!**
 -**And More Abilities Coming Soon .. **
+-** **And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
 **`)
      message.channel.sendEmbed(embed);
  }
