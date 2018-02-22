@@ -15,6 +15,26 @@ client.on('message', message => {
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => {
+
+if (message.content.startsWith("!help")) {
+     message.reply("✅**that your request**")
+
+     const embed = new Discord.RichEmbed()
+         .setColor('RANDOM')
+         .setTitle("**Spyro Bot**")
+         .setDescription(`**
+-**! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!'' **
+-**''!id'' To See Your information playing,role ...etc **
+-**''!server'' To Our Server Information**
+-**''!servericon'' To See Our Server Icon => For Fun !!**
+-**''!animal'' To See a Animals Pictures => For Fun !!**
+-**And More Abilities Coming Soon .. **
+**`)
+     message.channel.sendEmbed(embed);
+ }
+});
+
+client.on('message', message => {
 	const prefix = "!";
 
 if (message.content.startsWith(prefix + "roles")) {
