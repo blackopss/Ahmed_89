@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong bot ping => -20ms');
+    if (message.content === 'm7md') {
+    	message.reply('**M7MD XD IS DA BEST YEAH YEAH YEAH YEAH ♥ **');
   	}
 });
 
