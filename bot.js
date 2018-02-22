@@ -15,10 +15,7 @@ client.on('message', message => {
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
-    
-
-
-
+ 
 client.on('message', message => {
 if (message.content.startsWith("!help")) {
      message.reply("✅**that your request**")
@@ -27,17 +24,20 @@ if (message.content.startsWith("!help")) {
          .setColor('RANDOM')
          .setTitle("**Spyro Bot**")
          .setDescription(`**
--**! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!''**
+-**! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!'' **
 -**''!id'' To See Your information playing,role ...etc **
 -**''!server'' To Our Server Information**
 -**''!servericon'' To See Our Server Icon => For Fun !!**
 -**''!animal'' To See a Animals Pictures => For Fun !!**
 -**And More Abilities Coming Soon .. **
--** ** And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
+-** **And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
 **`)
      message.channel.sendEmbed(embed);
  }
-});
+});   
+
+
+
 
 client.on('message', message => {
 	const prefix = "!";
