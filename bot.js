@@ -22,9 +22,9 @@ if (message.content.startsWith("!help")) {
 
      const embed = new Discord.RichEmbed()
          .setColor('RANDOM')
-         .setTitle("**Spyro Bot**")
+         .setTitle("** **Spyro Bot** **")
          .setDescription(`**
--**! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!'' **
+-** ** ! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!'' ** **
 -**''!id'' To See Your information playing,role ...etc **
 -**''!server'' To Our Server Information**
 -**''!servericon'' To See Our Server Icon => For Fun !!**
@@ -32,7 +32,7 @@ if (message.content.startsWith("!help")) {
 -**And More Abilities Coming Soon .. **
 -** **And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
 **`)
-     message.author.send(embed);
+     message.channel.sendEmbed(embed);
  }
 });   
 
