@@ -29,10 +29,11 @@ if (message.content.startsWith(prefix + "roles")) {
             message.channel.sendEmbed(embed);
         }
     });
-client.on('message', message => {
-		const prefix = "!";
 
-    if(message.content == prefix + 'server') {
+client.on('message', message => {
+	const prefix = "!";
+
+if(message.content == prefix + 'server') {
         var servername = message.guild.name
         var اونر = message.guild.owner
         var اعضاء = message.guild.memberCount
