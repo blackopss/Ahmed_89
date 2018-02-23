@@ -24,14 +24,14 @@ if (message.content.startsWith("!help")) {
          .setColor('RANDOM')
          .setTitle("**Spyro Bot**")
          .setDescription(`**
--** **! Is Prefix Of Our Bot;If you Want to Use Command Please Start with ''!''** **
--**''!id'' To See Your information playing,role ...etc **
--**''!server'' To Our Server Information**
--**''!servericon'' To See Our Server Icon => For Fun !!**
--**''!animal'' To See a Animals Pictures => For Fun !!**
--** ''!anime'' To See Anime Pictures x) => For Fun !! **
--**And More Abilities Coming Soon .. **
--** **And If You Want To Invite Your Friend Here is The invitation => https://discord.gg/dnJQ8Ws ** **
+** **-! **Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' ** 
+** **-!id** To See Your information playing,role  etc....... ** 
+** **-!server**  To Our Server Information **
+** **-!servericon** To See Our Server Icon! **
+** **-!animal** To See a Animals Pictures! **
+** **-!anime'** To See Anime Pictures! **
+** **More Abilities Coming Soon... ** **
+** **Join our server now: https://discord.gg/KYS3Bjb ** **
 **`)
      message.channel.sendEmbed(embed);
  }
