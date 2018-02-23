@@ -3,6 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+     client.user.setActivity("!help|Enjoy!",{type: 'WATCHING'});
+
 });
 
 
@@ -288,4 +290,38 @@ var cats = ["https://i.imgur.com/3Vzhklz.jpg","https://i.imgur.com/4eU1h2n.jpg",
 .setImage(cats[Math.floor(Math.random() * cats.length)])
 message.channel.sendEmbed(cat);
     }
+});
+
+
+client.on('message', message => {
+            const prefix = "!";
+ 
+         if (message.content === prefix + "time") {
+             if (!message.channel.guild) return message.reply('** This command only for servers **');  
+ var currentTime = new Date(),
+             hours = currentTime.getHours() + 0 ,
+             minutes = currentTime.getMinutes(),
+             seconds = currentTime.getSeconds();
+ 
+             if (minutes < 10) {
+                 minutes = '0' + minutes;
+             }
+             var suffix = 'صباحاَ';
+             if (hours >= 12) {
+                 suffix = 'مساء';
+                 hours = hours - 9;
+             }
+             if (hours == 0) {
+                 hours = 12;
+             }
+ 
+                 var Date15= new Discord.RichEmbed()
+                 .setTitle("**Time - الساعة**")
+                 .setColor('RANDOM')
+                 .setTimestamp()
+                 .setDescription( "『"+ " " + hours + ":" + minutes + " " + "』")
+                  message.channel.sendEmbed(Date15);
+         }
+  
+  
 });
