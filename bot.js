@@ -24,6 +24,7 @@ if (message.content.startsWith("!help")) {
          .setColor('RANDOM')
          .setTitle("**Spyro Bot**")
          .setDescription(`**
+** ** -------------------Help In Enlgish-------------------------** **
 ** **-! **Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' ** 
 ** **-!id** To See Your information playing,role  etc....... ** 
 ** **-!server**  To Our Server Information **
@@ -36,7 +37,7 @@ if (message.content.startsWith("!help")) {
 ** ***And Also If Someone Share A Server "Auto Mute" *** **
 ** **More Abilities Coming Soon... ** **
 ** **Join our server now: https://discord.gg/KYS3Bjb ** **
-** ** Help In Arabic / بالعربية ** **
+** ** --------------------Help In Arabic / بالعربية ---------------** **
 ** **!id ** معلومات حساب **
 ** **!server** معلومات سيرفر **
 ** **!servericon**صورة سيرفر **
@@ -44,10 +45,13 @@ if (message.content.startsWith("!help")) {
 ** **!anime** تشوف صور انمي **
 ** **!kick** تطرد شخص **
 ** **!ban** حظر شخص **
+** **!inviter** علشان ترسل لكل اعضاء سيرفر رابط سيرفر **
+** **!bc** علشان ترسل في خاص لكل اعضاء سيرفر **
 ** **!ping** تشوف سرعة اتصال **
 ** **و اذا شخص نشر سيرفره راح يبلع ميوت** **
 ** ** وبعض خاصيات قادمة ....** **
 ** **تعال الى سيرفرنا https://discord.gg/KYS3Bjb ** **
+** ** ---------------------------------------------** **
 **`)
      message.channel.sendEmbed(embed);
  }
