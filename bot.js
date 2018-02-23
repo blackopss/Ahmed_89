@@ -3,10 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-     client.user.setActivity("!help|Enjoy!",{type: 'WATCHING'});
-
-});
-
+	
+});    
 
 client.on('message', message => {
     if (message.content === 'ping') {
