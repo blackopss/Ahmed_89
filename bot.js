@@ -275,3 +275,16 @@ var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.d
 message.channel.sendEmbed(cat);
     }
 });
+
+var prefix = "!";
+var cats = ["https://i.imgur.com/3Vzhklz.jpg","https://i.imgur.com/4eU1h2n.jpg","https://imgur.com/yxZ83xN.jpg","https://i.imgur.com/8P33xQ0.jpg","https://i.imgur.com/l3mTCDO.jpg","https://i.imgur.com/gjsO5tE.jpg","https://i.imgur.com/IGZAy0o.jpg","https://i.imgur.com/nBAq0ds.jpg","https://imgur.com/gemJMuU.jpg","https://i.imgur.com/1XjTm39.jpg"]
+    client.on('message', message => {
+        var args = message.content.split(" ").slice(1);
+		 const prefix = "!";
+		 
+    if(message.content.startsWith(prefix + 'anime')) {
+         var cat = new Discord.RichEmbed()
+.setImage(cats[Math.floor(Math.random() * cats.length)])
+message.channel.sendEmbed(cat);
+    }
+});
