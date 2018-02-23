@@ -47,7 +47,7 @@ if (message.content.startsWith("!help")) {
 ** **!ping** تشوف سرعة اتصال **
 ** **و اذا شخص نشر سيرفره راح يبلع ميوت** **
 ** ** وبعض خاصيات قادمة ....** **
-** **تعال الى سيرفرنا** **
+** **تعال الى سيرفرنا https://discord.gg/KYS3Bjb ** **
 **`)
      message.channel.sendEmbed(embed);
  }
