@@ -31,7 +31,7 @@ if (message.content.startsWith("!help")) {
 ** **!servericon** To See Our Server Icon! **
 ** **!ping** To See Your Ping**
 ** **!anime'** To See Anime Pictures! **
-========================Administator====================** **
+================Administator================** **
 ** **!kick ** To Kick **
 ** **!ban** To Ban **
 ** **!mute** To Mute **
@@ -46,7 +46,7 @@ if (message.content.startsWith("!help")) {
 ** **!servericon**صورة سيرفر **
 ** **!ping** تشوف سرعة اتصال **
 ** **!anime** تشوف صور انمي **
-** **====================اوامر لادارة================** **
+** **================اوامر لادارة================** **
 ** **!kick** تطرد شخص **
 ** **!ban** حظر شخص **
 ** **!roles** علشان تشوف رتب حق سيرفرك **
