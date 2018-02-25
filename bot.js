@@ -26,15 +26,18 @@ if (message.content.startsWith("!help")) {
          .setDescription(`**
 ** ** -------------------Help In Enlgish-------------------------** **
 ** **-! **Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' ** 
-** **-!id** To See Your information playing,role  etc....... ** 
-** **-!server**  To Our Server Information **
-** **-!servericon** To See Our Server Icon! **
-** **-!ping** To See Your Ping**
-** **-!anime'** To See Anime Pictures! **
+** **!id** To See Your information playing,role  etc....... ** 
+** **!server**  To Our Server Information **
+** **!servericon** To See Our Server Icon! **
+** **!ping** To See Your Ping**
+** **!anime'** To See Anime Pictures! **
 ----------------------------------Administator---------------------** **
-** **-!kick ** To Kick **
-** **-!ban** To Ban **
-** **-!ping** To See Your Ping**
+** **!kick ** To Kick **
+** **!ban** To Ban **
+** **!mute** To Mute **
+** **!bc** To BroadCast In Dm's **
+** **!roles** To See Your Server Roles **
+** **!inviter** To Send Everyone in Dm's Your Server Invite **
 ** ***And Also If Someone Share A Server "Auto Mute" *** **
 ** **More Abilities Coming Soon... ** **
 ** ** --------------------Help In Arabic / بالعربية ---------------** **
@@ -46,6 +49,7 @@ if (message.content.startsWith("!help")) {
 ** ** -----------------------------اوامر لادارة--------------------** **
 ** **!kick** تطرد شخص **
 ** **!ban** حظر شخص **
+** **!roles** علشان تشوف رتب حق سيرفرك **
 ** **!inviter** علشان ترسل لكل اعضاء سيرفر رابط سيرفر **
 ** **!bc** علشان ترسل في خاص لكل اعضاء سيرفر **
 ** **!mute** علشان تسوي ميوت لشخص **
