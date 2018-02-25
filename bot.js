@@ -24,14 +24,14 @@ if (message.content.startsWith("!help")) {
          .setColor('RANDOM')
          .setTitle("**Help Menu**")
          .setDescription(`**
-** ** ------------------------------Help In Enlgish----------------------------------** **
+** ** -----------------------Help In Enlgish------------------------** **
 ** **-! **Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' ** 
 ** **!id** To See Your information playing,role  etc....... ** 
 ** **!server**  To Our Server Information **
 ** **!servericon** To See Our Server Icon! **
 ** **!ping** To See Your Ping**
 ** **!anime'** To See Anime Pictures! **
-==================================Administator=========================================** **
+==============================Administator===========================** **
 ** **!kick ** To Kick **
 ** **!ban** To Ban **
 ** **!mute** To Mute **
@@ -40,13 +40,13 @@ if (message.content.startsWith("!help")) {
 ** **!inviter** To Send Everyone in Dm's Your Server Invite **
 ** ***And Also If Someone Share A Server "Auto Mute" *** **
 ** **More Abilities Coming Soon... ** **
-** ** --------------------------Help In Arabic / بالعربية -----------------------------** **
+** ** -------------------Help In Arabic / بالعربية ------------------** **
 ** **!id ** معلومات حساب **
 ** **!server** معلومات سيرفر **
 ** **!servericon**صورة سيرفر **
 ** **!ping** تشوف سرعة اتصال **
 ** **!anime** تشوف صور انمي **
-** **=================================اوامر لادارة=======================================** **
+** **=============================اوامر لادارة=========================** **
 ** **!kick** تطرد شخص **
 ** **!ban** حظر شخص **
 ** **!roles** علشان تشوف رتب حق سيرفرك **
@@ -55,7 +55,7 @@ if (message.content.startsWith("!help")) {
 ** **!mute** علشان تسوي ميوت لشخص **
 ** **و اذا شخص نشر سيرفره راح يبلع ميوت** **
 ** ** وبعض خاصيات قادمة ....** **
-** ** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^** **
+** ** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^** **
 **`)
      message.channel.sendEmbed(embed);
  }
