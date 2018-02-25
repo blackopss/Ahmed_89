@@ -22,36 +22,36 @@ if (message.content.startsWith("!help")) {
 
      const embed = new Discord.RichEmbed()
          .setColor('RANDOM')
-         .setTitle("**Spyro Bot**")
+         .setTitle("**Help Menu**")
          .setDescription(`**
 ** ** -------------------Help In Enlgish-------------------------** **
 ** **-! **Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' ** 
 ** **-!id** To See Your information playing,role  etc....... ** 
 ** **-!server**  To Our Server Information **
 ** **-!servericon** To See Our Server Icon! **
-** **-!animal** To See a Animals Pictures! **
+** **-!ping** To See Your Ping**
 ** **-!anime'** To See Anime Pictures! **
+----------------------------------Administator---------------------** **
 ** **-!kick ** To Kick **
 ** **-!ban** To Ban **
 ** **-!ping** To See Your Ping**
 ** ***And Also If Someone Share A Server "Auto Mute" *** **
 ** **More Abilities Coming Soon... ** **
-** **Join our server now: https://discord.gg/KYS3Bjb ** **
 ** ** --------------------Help In Arabic / بالعربية ---------------** **
 ** **!id ** معلومات حساب **
 ** **!server** معلومات سيرفر **
 ** **!servericon**صورة سيرفر **
-** **!animal** تشوف صور حيوانات **
+** **!ping** تشوف سرعة اتصال **
 ** **!anime** تشوف صور انمي **
+** ** -----------------------------اوامر لادارة--------------------** **
 ** **!kick** تطرد شخص **
 ** **!ban** حظر شخص **
 ** **!inviter** علشان ترسل لكل اعضاء سيرفر رابط سيرفر **
 ** **!bc** علشان ترسل في خاص لكل اعضاء سيرفر **
-** **!ping** تشوف سرعة اتصال **
+** **!mute** علشان تسوي ميوت لشخص **
 ** **و اذا شخص نشر سيرفره راح يبلع ميوت** **
 ** ** وبعض خاصيات قادمة ....** **
-** **تعال الى سيرفرنا https://discord.gg/KYS3Bjb ** **
-** ** ---------------------------------------------** **
+** ** --------------------------------------------------------------** **
 **`)
      message.channel.sendEmbed(embed);
  }
@@ -478,7 +478,7 @@ client.on("message", message => {
 return message.reply("**:white_check_mark: ..Muted ;To Unmute Just Repeat The Same Command**").catch(console.error);
 } else {
     message.guild.member(user).removeRole(muteRole).then(() => {
-return message.reply("**:white_check_mark: .. Unmuted**").catch(console.error);
+return message.reply("**:white_check_mark: .. Muted**").catch(console.error);
 });
   }
 
