@@ -475,7 +475,7 @@ client.on("message", message => {
    if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('** I Need Permission => Manage Roles **').catch(console.error);
  
   if (message.guild.member(user).roles.has(muteRole.id)) {
-return message.reply("**:white_check_mark: ..Unmuted**").catch(console.error);
+return message.reply("**:white_check_mark: ..Muted ;To Unmute Just Repeat The Same Command**").catch(console.error);
 } else {
     message.guild.member(user).removeRole(muteRole).then(() => {
 return message.reply("**:white_check_mark: .. Unmuted**").catch(console.error);
