@@ -15,7 +15,50 @@ client.on('message', message => {
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
- 
+client.on('message', message => {
+if (message.content.startsWith("!help")) {
+     message.reply("✅**that your request**")
+
+     const embed = new Discord.RichEmbed()
+         .setColor('RANDOM')
+         .setTitle("**Spyro Bot**")
+         .setDescription(`**
+ ** **-----------------------Help In Enlgish------------------------** ** 
+ ** **!** Is Prefix Of Our Bot, If you Want to Use Command Please Start with ''!'' **  
+ ** **!id** To See Your information playing,role  etc....... ** 
+ ** **!server**  To Our Server Information ** 
+ ** **!servericon** To See Our Server Icon! **
+ ** **!ping** To See Your Ping **
+ ** **!anime** To See Anime Pictures! **
+** ================**Administator**================ ** 
+ ** **!kick**  To Kick **
+ ** **!ban** To Ban **
+ ** **!mute** To Mute **
+ ** **!bc** To BroadCast In Dm's** 
+ ** **!roles** To See Your Server Roles **
+ ** **!inviter** To Send Everyone in Dm's Your Server Invite **
+ And Also If Someone Share A Server "Auto Mute"  
+ More Abilities Coming Soon...  
+  -------------------Help In Arabic / بالعربية ------------------ 
+ ** **!id**  معلومات حساب ** 
+ ** **!server** معلومات سيرفر **
+ ** **!servericon**صورة سيرفر **
+ ** **!ping** تشوف سرعة اتصال **
+ ** **!anime** تشوف صور انمي **
+ ================اوامر لادارة================ 
+ ** **!kick** تطرد شخص **
+ ** **!ban** حظر شخص **
+ ** **!roles** علشان تشوف رتب حق سيرفرك ** 
+ ** **!inviter** علشان ترسل لكل اعضاء سيرفر رابط سيرفر* * 
+ ** **!bc** علشان ترسل في خاص لكل اعضاء سيرفر **
+ ** **!mute** علشان تسوي ميوت لشخص ** **
+ ** و اذا شخص نشر سيرفره راح يبلع ميوت **
+  ** وبعض خاصيات قادمة .... **
+ ** ----------------------------------------------------------------- **
+**`)
+     message.channel.sendEmbed(embed);
+ }
+}); 
 
 
 
